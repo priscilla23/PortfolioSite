@@ -2,7 +2,7 @@
   "name": "spa-boilerplate",
   "description": "Priscilla Cunningham - Website",
   "version": "0.0.0",
-  "homepage": "http://darcyclarke.me",
+  "homepage": "priscillatheresa.com",
   "author": "Priscilla Cunningham",
   "main": "server.js",
   "dependencies": {
@@ -10,7 +10,7 @@
   },
   "devDependencies": {
     "gulp": "*",
-    "gulp-less": "*",
+    "gulp-sass": "*",
     "gulp-imagemin": "*",
     "gulp-jade": "*",
     "gulp-rename": "*"

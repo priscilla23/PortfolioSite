@@ -15,6 +15,8 @@ jQuery(function($) {
     routes: {
       '' : 'home',
       'about': 'about',
+      'portfolio':'portfolio',
+      'fun':'fun',
       'contact': 'contact'
     },
 
@@ -28,6 +30,18 @@ jQuery(function($) {
     about: function() {
       console.log('Navigating to About Page');
       App.views['about'].render();
+    },
+    
+    // Portfolio Route
+    portfolio: function() {
+      console.log('Navigating to Portfolio Page');
+      App.views['portfolio'].render();
+    },
+    
+    // About Route
+    fun: function() {
+      console.log('Navigating to Fun Page');
+      App.views['fun'].render();
     },
 
     // Contact Route
@@ -51,6 +65,8 @@ jQuery(function($) {
     this.views = {
       home: new HomeView(),
       about: new AboutView(),
+      portfolio: new PortfolioView(),
+      fun: new FunView(),
       contact: new ContactView()
     };
 
@@ -134,6 +150,84 @@ jQuery(function($) {
 
   });
 
+  // -----------------------------
+  // Portfolio View
+  // -----------------------------
+ var PortfolioView = Backbone.View.extend({
+
+    // Our Container Element
+    el: $('.main'),
+
+    // Our template ID
+    template: '#portfolio',
+
+    // Initialize View
+    initialize: function() {
+
+      // Setup our template and start our model
+      this.template = Handlebars.compile($(this.template).html());
+      this.model = new Backbone.Model({});
+
+      // Some page data
+      this.model.set({
+        content: '<h1>Portfolio Page</h1>'
+      });
+
+    },
+
+    // Our Render Function
+    render: function() {
+
+      // Get data and render our template
+      var data = this.model.toJSON();
+      var html = this.template(data);
+
+      // Set update the containers HTML
+      $(this.el).html(html);
+    }
+
+  });
+  
+    // -----------------------------
+  // Fun View
+  // -----------------------------
+   var FunView = Backbone.View.extend({
+
+    // Our Container Element
+    el: $('.main'),
+
+    // Our template ID
+    template: '#fun',
+
+    // Initialize View
+    initialize: function() {
+
+      // Setup our template and start our model
+      this.template = Handlebars.compile($(this.template).html());
+      this.model = new Backbone.Model({});
+
+      // Some page data
+      this.model.set({
+        content: '<h1>fun Page</h1>'
+      });
+
+    },
+
+    // Our Render Function
+    render: function() {
+
+      // Get data and render our template
+      var data = this.model.toJSON();
+      var html = this.template(data);
+
+      // Set update the containers HTML
+      $(this.el).html(html);
+    }
+
+  });
+  
+  
+  
   // -----------------------------
   // Contact View
   // -----------------------------

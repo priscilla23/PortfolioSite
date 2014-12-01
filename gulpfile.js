@@ -4,7 +4,7 @@
 
 var fs        = require('fs');
 var gulp      = require('gulp');
-var less      = require('gulp-less');
+var sass      = require('gulp-sass');
 var jade      = require('gulp-jade');
 var imagemin  = require('gulp-imagemin');
 var rename    = require('gulp-rename');
@@ -14,7 +14,7 @@ var rename    = require('gulp-rename');
 // ------------------------------------
 
 var paths     = {
-  styles      : './src/assets/styles/**/*.less',
+  styles      : './src/assets/styles/**/*.sass',
   scripts     : './src/assets/scripts/**/*.js',
   images      : './src/assets/images/**/*.{png,gif,jpeg,jpg}',
   templates   : './src/**/*.jade'
@@ -45,8 +45,8 @@ gulp.task('watch', function() {
 
 gulp.task('styles', function() {
 
-  gulp.src('./src/assets/styles/index.less')
-    .pipe(less({ errLogToConsole: true, sourceComments : 'normal' }))
+  gulp.src('./src/assets/styles/index.sass')
+    .pipe(sass({ errLogToConsole: true, sourceComments : 'normal' }))
     .pipe(rename('main.css'))
     .pipe(gulp.dest('./public/assets/styles/'))
 

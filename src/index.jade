@@ -29,6 +29,10 @@ html
 
         li: a(href="/about") About
 
+        li: a(href="/portfolio") Portfolio
+        
+        li: a(href="/fun") Fun Stuff
+        
         li: a(href="/contact") Contact
 
     div.main
@@ -46,6 +50,12 @@ html
 
   script#about(type="text/template").
     <div class="page about">{{{content}}}</div>
+    
+  script#portfolio(type="text/template").
+    <div class="page portfolio">{{{content}}}</div>
+    
+  script#fun(type="text/template").
+    <div class="page fun">{{{content}}}</div>
 
   script#contact(type="text/template").
     <div class="page contact">{{{content}}}</div>
