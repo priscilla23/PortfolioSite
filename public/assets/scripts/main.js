@@ -93,7 +93,7 @@ jQuery(function($) {
 
       // Some page data
       this.model.set({
-        content: 'soemthing here'
+        content: 'gfkl'
       });
 
     },
@@ -132,7 +132,8 @@ jQuery(function($) {
 
       // Some page data
       this.model.set({
-        content: '<h1>About Page</h1>'
+        content: '<h1>About Page</h1>',
+        avi: '<img src="/assets/images/selfie2.JPG">'
       });
 
     },
@@ -170,7 +171,9 @@ jQuery(function($) {
 
       // Some page data
       this.model.set({
-        content: '<h1>Portfolio Page</h1>'
+        pieceone: '<img src="/assets/images/fullsize.jpg">',
+        piecetwo: '<img src="/assets/images/img2.jpg">',
+        piecethree: '<img src="/assets/images/port3.jpg">',
       });
 
     },
@@ -208,7 +211,7 @@ jQuery(function($) {
 
       // Some page data
       this.model.set({
-        content: '<h1>fun Page</h1>',
+        content: '<h1>fun Pagefklsd</h1>',
         someOtherText: '<strong>blah</strong> blah blah'
       });
 

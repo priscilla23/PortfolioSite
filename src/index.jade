@@ -33,6 +33,7 @@ html
           li.three
             a(href='/portfolio') portfolio
             
+            
           li.four
             a(href='/fun') Fun
             
@@ -51,17 +52,22 @@ html
     <div class="page home">{{{content}}}</div>
 
   script#about(type="text/template").
-    <div class="page about">{{{content}}}</div>
+    <div class="page about">{{{content}}}
+    {{{avi}}}</div>
     
   script#portfolio(type="text/template").
-    <div class="page portfolio">{{{content}}}</div>
+    <div class="page portfolio">{{{pieceone}}}
+    {{{piecetwo}}}
+    {{{piecethree}}}
+    </div>
     
   script#fun(type="text/template").
     <div class="page fun">{{{content}}}<
     <p>{{{someOtherText}}}</p></div>
 
   script#contact(type="text/template").
-    <div class="page contact">{{{content}}}</div>
+    <div class="page contact">{{{content}}}
+    </div>
 
   // -----------------------------
   // Libraries
