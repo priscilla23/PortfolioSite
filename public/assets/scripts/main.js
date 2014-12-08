@@ -93,7 +93,7 @@ jQuery(function($) {
 
       // Some page data
       this.model.set({
-        content: '<h1>Home Page</h1>'
+        content: 'soemthing here'
       });
 
     },
@@ -208,7 +208,8 @@ jQuery(function($) {
 
       // Some page data
       this.model.set({
-        content: '<h1>fun Page</h1>'
+        content: '<h1>fun Page</h1>',
+        someOtherText: '<strong>blah</strong> blah blah'
       });
 
     },

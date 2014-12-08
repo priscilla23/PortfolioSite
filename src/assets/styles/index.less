@@ -1,0 +1,155 @@
+// -----------------------------
+// Variables
+// -----------------------------
+
+//colors
+@peach:#FBC599;
+@rose:#FF847C;
+@pink:#E23D75;
+@plum:#5F0D3B;
+@purple:#742365;
+@white: #FFF;
+@bgColor:#4183D7;
+@lightColor: #efefef;
+@darkColor: #333;
+@grey:#303030;
+@transGrey:rgba(90,90,90, 0.5);
+@size:100px;
+
+
+//fonts
+@bodyfont: 'Source Sans Pro', sans-serif;
+@bdfontweight:200;
+@fontcase:uppercase;
+// -----------------------------
+// Global Styles
+// -----------------------------
+*{
+  box-sizing: border-box;
+}
+
+body{
+  padding: 0;
+  margin: 0;
+  font-size: 14px;
+  font-family: sans-serif;
+  height: 100%;
+  background-color:@grey;
+  background-image:url('../images/bg.jpg');
+ 
+  
+  }
+  
+  
+// -----------------------------
+// App Specific
+// -----------------------------
+.wrapper {
+  margin:0 50px;
+  width:100%;
+}
+ nav, .main{
+  margin: 80px auto;
+}
+
+
+// -----------------------------
+//Navigation
+// -----------------------------
+
+nav {
+  float:left;
+  width:25%;
+  height:300px;
+  padding-top:0;
+}
+
+ul{
+  list-style-type:none;
+  margin-top:0;
+  text-align:center;
+}
+
+li {
+  height:50px;
+  padding:15px;
+
+}
+
+li a {
+  font-family:@bodyfont;
+  font-weight:@bdfontweight;
+  font-size:1.3em;
+  text-decoration:none;
+  color:@white;
+  text-transform:@fontcase;
+}
+
+
+li.one{
+  background-color:@peach;
+}
+li.two{
+  background-color:@rose;
+}
+li.three{
+  background-color:@pink;
+}
+li.four{
+  background-color:@plum;
+}
+li.five{
+  background-color:@purple;
+}
+
+// -----------------------------
+//Main Sections
+// -----------------------------
+.main, .home, .about, .portfolio, .fun, .contact{
+  float:left;
+  width:75%;
+  height:500px;
+  overflow-y:auto;
+  position:relative;
+}
+
+.main .home {
+  background-color:@peach;
+}
+
+.main .about {
+  background-color:@rose;
+}
+
+.main .portfolio {
+  background-color:@pink;
+}
+
+.main .fun {
+  background-color:@plum;
+}
+
+.main .contact {
+  background-color:@purple;
+}
+
+// -----------------------------
+//Home Page
+// -----------------------------
+
+nav img{
+  height:120px;
+  width:260px;
+  margin-left:50px;
+}
+// -----------------------------
+//Footer
+// -----------------------------
+footer.footer p{
+  color:@white;
+  text-align:center;
+  font-family:@bodyfont;
+  font-weight:@bdfontweight;
+  clear:both;
+  text-transform:@fontcase;
+}

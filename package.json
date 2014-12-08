@@ -10,7 +10,7 @@
   },
   "devDependencies": {
     "gulp": "*",
-    "gulp-sass": "*",
+    "gulp-less": "*",
     "gulp-imagemin": "*",
     "gulp-jade": "*",
     "gulp-rename": "*"

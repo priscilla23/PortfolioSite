@@ -3,43 +3,45 @@ html
 
   head
 
-  meta(charset="utf-8")
-
-  meta(http-equiv="X-UA-Compatible", content="IE=edge")
-
-  title Hello World
-
-  meta(name="description", content="Hello World")
-
-  meta(name="viewport", content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0, minimal-ui")
-
-  link(rel="stylesheet", href="assets/styles/main.css", type="text/css")
-
+    meta(charset="utf-8")
+  
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")
+  
+    title TBD
+  
+    meta(name="description", content="Hello World")
+  
+    meta(name="viewport", content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0, minimal-ui")
+  
+    link(rel="stylesheet", href="assets/styles/main.css", type="text/css")
+  
+    link(href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400', rel='stylesheet', type='text/css')
+  
   body
+    .wrapper
+    
+      
+      nav
+        img(src="/assets/images/logo.png")
+        ul
+          li.one
+            a(href='/') Home
+            
+          li.two
+            a(href='/about') about
+            
+          li.three
+            a(href='/portfolio') portfolio
+            
+          li.four
+            a(href='/fun') Fun
+            
+          li.five
+            a(href='/contact') contact
+      .main
+  
 
-  div.wrapper
-
-    header.header
-
-      h1 Hello World
-
-      ul.nav
-
-        li: a(href="/") Home
-
-        li: a(href="/about") About
-
-        li: a(href="/portfolio") Portfolio
-        
-        li: a(href="/fun") Fun Stuff
-        
-        li: a(href="/contact") Contact
-
-    div.main
-
-    footer.footer
-
-      p Copyright &copy; 2014
+    
 
   // -----------------------------
   // Templates
@@ -55,7 +57,8 @@ html
     <div class="page portfolio">{{{content}}}</div>
     
   script#fun(type="text/template").
-    <div class="page fun">{{{content}}}</div>
+    <div class="page fun">{{{content}}}<
+    <p>{{{someOtherText}}}</p></div>
 
   script#contact(type="text/template").
     <div class="page contact">{{{content}}}</div>
@@ -64,15 +67,17 @@ html
   // Libraries
   // -----------------------------
 
-  script(type="text/javascript", src="http://code.jquery.com/jquery-2.1.1.min.js")
+  script(type="text/javascript", src="//code.jquery.com/jquery-2.1.1.min.js")
 
-  script(type="text/javascript", src="http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.7.0/underscore.js")
+  script(type="text/javascript", src="//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.7.0/underscore.js")
 
-  script(type="text/javascript", src="http://cdnjs.cloudflare.com/ajax/libs/backbone.js/1.1.2/backbone.js")
+  script(type="text/javascript", src="//cdnjs.cloudflare.com/ajax/libs/backbone.js/1.1.2/backbone.js")
 
-  script(type="text/javascript", src="http://cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0/handlebars.js")
-
-
+  script(type="text/javascript", src="//cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0/handlebars.js")
+  
+  script(src='//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js')
+   
+   script(src='prefixfree.min.js')
   // -----------------------------
   // Application
   // -----------------------------

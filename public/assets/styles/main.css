@@ -1,58 +1,98 @@
-/* line 7, /home/ubuntu/workspace/src/assets/styles/index.sass */
 * {
-  box-sizing: border-box; }
-
-/* line 10, /home/ubuntu/workspace/src/assets/styles/index.sass */
+  box-sizing: border-box;
+}
 body {
   padding: 0;
   margin: 0;
   font-size: 14px;
   font-family: sans-serif;
-  color: #555;
-  background: #4183D7; }
-
-/* line 18, /home/ubuntu/workspace/src/assets/styles/index.sass */
-a {
-  text-decoration: none;
-  display: inline-block;
-  color: #555; }
-
-/* line 24, /home/ubuntu/workspace/src/assets/styles/index.sass */
-.header, .main, .footer {
+  height: 100%;
+  background-color: #303030;
+  background-image: url('../images/bg.jpg');
+}
+.wrapper {
+  margin: 0 50px;
   width: 100%;
-  display: block;
-  clear: both;
-  float: left; }
-
-/* line 31, /home/ubuntu/workspace/src/assets/styles/index.sass */
-.header {
-  padding: 20px;
-  border-bottom: 1px solid #efefef; }
-
-/* line 36, /home/ubuntu/workspace/src/assets/styles/index.sass */
-.nav {
-  margin: 0;
-  padding: 0; }
-  /* line 40, /home/ubuntu/workspace/src/assets/styles/index.sass */
-  .nav li {
-    margin: 0;
-    padding: 0;
-    display: inline-block;
-    list-style: none; }
-    /* line 46, /home/ubuntu/workspace/src/assets/styles/index.sass */
-    .nav li a {
-      padding: 5px 10px; }
-
-/* line 50, /home/ubuntu/workspace/src/assets/styles/index.sass */
+}
+nav,
 .main {
-  padding: 20px;
-  border-bottom: 1px solid #efefef; }
-
-/* line 55, /home/ubuntu/workspace/src/assets/styles/index.sass */
-.footer {
-  padding: 20px; }
-  /* line 58, /home/ubuntu/workspace/src/assets/styles/index.sass */
-  .footer p {
-    margin: 0;
-    padding: 0;
-    font-size: 12px; }
+  margin: 80px auto;
+}
+nav {
+  float: left;
+  width: 25%;
+  height: 300px;
+  padding-top: 0;
+}
+ul {
+  list-style-type: none;
+  margin-top: 0;
+  text-align: center;
+}
+li {
+  height: 50px;
+  padding: 15px;
+}
+li a {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 200;
+  font-size: 1.3em;
+  text-decoration: none;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+li.one {
+  background-color: #fbc599;
+}
+li.two {
+  background-color: #ff847c;
+}
+li.three {
+  background-color: #e23d75;
+}
+li.four {
+  background-color: #5f0d3b;
+}
+li.five {
+  background-color: #742365;
+}
+.main,
+.home,
+.about,
+.portfolio,
+.fun,
+.contact {
+  float: left;
+  width: 75%;
+  height: 500px;
+  overflow-y: auto;
+  position: relative;
+}
+.main .home {
+  background-color: #fbc599;
+}
+.main .about {
+  background-color: #ff847c;
+}
+.main .portfolio {
+  background-color: #e23d75;
+}
+.main .fun {
+  background-color: #5f0d3b;
+}
+.main .contact {
+  background-color: #742365;
+}
+nav img {
+  height: 120px;
+  width: 260px;
+  margin-left: 50px;
+}
+footer.footer p {
+  color: #ffffff;
+  text-align: center;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 200;
+  clear: both;
+  text-transform: uppercase;
+}
