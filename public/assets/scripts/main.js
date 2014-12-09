@@ -93,7 +93,7 @@ jQuery(function($) {
 
       // Some page data
       this.model.set({
-        content: 'gfkl'
+        logolarge: '<img src="/assets/images/logo.png">'
       });
 
     },
@@ -133,7 +133,8 @@ jQuery(function($) {
       // Some page data
       this.model.set({
         content: '<h1>About Page</h1>',
-        avi: '<img src="/assets/images/selfie2.JPG">'
+        avi:'<img src="/assets/images/selfie2.JPG">',
+        info:'<p>Priscilla from the awesome land of Humber College. Currently about to enter my very last semester of Web Design &amp; Interactive Media and then off to the real world! Cheers!</p>'
       });
 
     },
@@ -211,8 +212,7 @@ jQuery(function($) {
 
       // Some page data
       this.model.set({
-        content: '<h1>fun Pagefklsd</h1>',
-        someOtherText: '<strong>blah</strong> blah blah'
+        content: '<h1>Draw Here</h1>'
       });
 
     },

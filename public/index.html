@@ -11,7 +11,7 @@
   </head>
   <body>
     <div class="wrapper">
-      <nav><img src="/assets/images/logo.png">
+      <nav>
         <ul>
           <li class="one"><a href="/">Home</a></li>
           <li class="two"><a href="/about">about</a></li>
@@ -27,24 +27,29 @@
   <!-- Templates-->
   <!-- ------------------------------->
   <script id="home" type="text/template">
-    <div class="page home">{{{content}}}</div>
+    <div class="page home">{{{logolarge}}}</div>
     
   </script>
   <script id="about" type="text/template">
-    <div class="page about">{{{content}}}
-    {{{avi}}}</div>
+    <div class="page about">
+    {{{content}}}
+    {{{avi}}}
+    {{{info}}}
+    </div>
     
   </script>
   <script id="portfolio" type="text/template">
-    <div class="page portfolio">{{{pieceone}}}
+    <div class="page portfolio">
+    {{{content}}}
+    {{{pieceone}}}
     {{{piecetwo}}}
     {{{piecethree}}}
     </div>
     
   </script>
   <script id="fun" type="text/template">
-    <div class="page fun">{{{content}}}<
-    <p>{{{someOtherText}}}</p></div>
+    <div class="page fun">{{{content}}}
+    </div>
     
   </script>
   <script id="contact" type="text/template">
@@ -59,9 +64,9 @@
   <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.7.0/underscore.js"></script>
   <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/backbone.js/1.1.2/backbone.js"></script>
   <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0/handlebars.js"></script>
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js">
-    <script src="prefixfree.min.js"></script>
-  </script>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="http://code.jquery.com/jquery-1.8.0.min.js"></script>
+  <script src="assets/js/script.js"></script>
   <!-- ------------------------------->
   <!-- Application-->
   <!-- ------------------------------->

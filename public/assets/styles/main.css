@@ -54,19 +54,19 @@ li a {
   text-transform: uppercase;
 }
 li.one {
-  background-color: #fbc599;
+  background-color: #859fab;
 }
 li.two {
-  background-color: #ff847c;
+  background-color: #a7a2b2;
 }
 li.three {
-  background-color: #e23d75;
+  background-color: #d4a5b2;
 }
 li.four {
-  background-color: #5f0d3b;
+  background-color: #d9b3b1;
 }
 li.five {
-  background-color: #742365;
+  background-color: #ddc0af;
 }
 .main,
 .home,
@@ -80,30 +80,52 @@ li.five {
   overflow-y: auto;
   position: relative;
 }
+.main,
+.home,
+.about,
+.portfolio,
+.fun,
+.contact h1 {
+  text-align: center;
+  color: #ffffff;
+}
 .main .home {
-  background-color: #fbc599;
+  background-color: #859fab;
+}
+.main .home img {
+  display: block;
+  margin: 100px auto;
 }
 .main .about {
-  background-color: #ff847c;
+  background-color: #a7a2b2;
 }
 .main .about img {
-  height: 250px;
-  width: 200px;
+  height: 270px;
+  width: 210px;
   border: 4px solid #ffffff;
+  display: block;
+  margin: 0 auto;
 }
 .main .portfolio {
-  background-color: #e23d75;
+  background-color: #d4a5b2;
 }
 .main .portfolio img {
   height: 270px;
   width: 200px;
   border: 4px solid #ffffff;
+  display: block;
+  margin: 50px auto;
 }
 .main .fun {
-  background-color: #5f0d3b;
+  background-color: #d9b3b1;
+}
+.main .fun canvas {
+  height: 350px;
+  width: 650px;
+  background: #ffffff;
 }
 .main .contact {
-  background-color: #742365;
+  background-color: #ddc0af;
 }
 nav img {
   height: 120px;

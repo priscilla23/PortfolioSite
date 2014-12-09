@@ -3,11 +3,11 @@
 // -----------------------------
 
 //colors
-@peach:#FBC599;
-@rose:#FF847C;
-@pink:#E23D75;
-@plum:#5F0D3B;
-@purple:#742365;
+@taupe:#DDC0AF;
+@lightpink:#D9B3B1;
+@pink:#D4A5B2;
+@indigo:#A7A2B2;
+@creamyblue:#859FAB;
 @white: #FFF;
 @bgColor:#4183D7;
 @lightColor: #efefef;
@@ -101,19 +101,19 @@ li a {
 
 
 li.one{
-  background-color:@peach;
+  background-color:@creamyblue;
 }
 li.two{
-  background-color:@rose;
+  background-color:@indigo;
 }
 li.three{
   background-color:@pink;
 }
 li.four{
-  background-color:@plum;
+  background-color:@lightpink;
 }
 li.five{
-  background-color:@purple;
+  background-color:@taupe;
 }
 
 // -----------------------------
@@ -127,20 +127,45 @@ li.five{
   position:relative;
 }
 
-.main .home {
-  background-color:@peach;
+.main, .home, .about, .portfolio, .fun, .contact h1{
+  text-align:center;
+  color:@white;
 }
 
+
+// -----------------------------
+//Home
+// -----------------------------
+.main .home {
+  background-color:@creamyblue;
+}
+
+.main .home img {
+  display:block;
+  margin:100px auto;
+}
+
+// -----------------------------
+//About
+// -----------------------------
+
 .main .about {
-  background-color:@rose;
+  background-color:@indigo;
 }
 
 .main .about img{
-  height:250px;
-  width:200px;
+  height:270px;
+  width:210px;
   border:4px solid @white;
+  display:block;
+  margin:0 auto;
+  
 }
 
+
+// -----------------------------
+//Portfolio
+// -----------------------------
 .main .portfolio {
   background-color:@pink;
 }
@@ -148,13 +173,28 @@ li.five{
   height:270px;
   width:200px;
   border:4px solid @white;
-}
-.main .fun {
-  background-color:@plum;
+  display:block;
+  margin:50px auto;
 }
 
+// -----------------------------
+//Fun
+// -----------------------------
+.main .fun {
+  background-color:@lightpink;
+}
+
+.main .fun canvas{
+  height:350px;
+  width:650px;
+  background:@white;
+}
+
+// -----------------------------
+//Contact
+// -----------------------------
 .main .contact {
-  background-color:@purple;
+  background-color:@taupe;
 }
 
 // -----------------------------

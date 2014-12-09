@@ -22,7 +22,7 @@ html
     
       
       nav
-        img(src="/assets/images/logo.png")
+  
         ul
           li.one
             a(href='/') Home
@@ -49,21 +49,26 @@ html
   // -----------------------------
 
   script#home(type="text/template").
-    <div class="page home">{{{content}}}</div>
+    <div class="page home">{{{logolarge}}}</div>
 
   script#about(type="text/template").
-    <div class="page about">{{{content}}}
-    {{{avi}}}</div>
+    <div class="page about">
+    {{{content}}}
+    {{{avi}}}
+    {{{info}}}
+    </div>
     
   script#portfolio(type="text/template").
-    <div class="page portfolio">{{{pieceone}}}
+    <div class="page portfolio">
+    {{{content}}}
+    {{{pieceone}}}
     {{{piecetwo}}}
     {{{piecethree}}}
     </div>
     
   script#fun(type="text/template").
-    <div class="page fun">{{{content}}}<
-    <p>{{{someOtherText}}}</p></div>
+    <div class="page fun">{{{content}}}
+    </div>
 
   script#contact(type="text/template").
     <div class="page contact">{{{content}}}
@@ -81,9 +86,11 @@ html
 
   script(type="text/javascript", src="//cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0/handlebars.js")
   
-  script(src='//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js')
-   
-   script(src='prefixfree.min.js')
+  script(src='/socket.io/socket.io.js')
+  
+  script(src='http://code.jquery.com/jquery-1.8.0.min.js')
+  
+  script(src='assets/js/script.js')
   // -----------------------------
   // Application
   // -----------------------------
