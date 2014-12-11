@@ -94,6 +94,7 @@ jQuery(function($) {
       // Some page data
       this.model.set({
         logolarge: '<img src="/assets/images/logo.png">'
+
       });
 
     },
@@ -132,10 +133,10 @@ jQuery(function($) {
 
       // Some page data
       this.model.set({
-        content: '<h1>About Page</h1>',
+        content: '<h1>About Moi</h1>',
         avi:'<img src="/assets/images/selfie2.JPG">',
-        info:'<p>Priscilla from the awesome land of Humber College. Currently about to enter my very last semester of Web Design &amp; Interactive Media and then off to the real world! Cheers!</p>'
-      });
+        info:'<p>Im so awesome so very awesome!</p>'
+    });
 
     },
 
@@ -172,6 +173,7 @@ jQuery(function($) {
 
       // Some page data
       this.model.set({
+        content: '<h1>Portfolio</h1>',
         pieceone: '<img src="/assets/images/fullsize.jpg">',
         piecetwo: '<img src="/assets/images/img2.jpg">',
         piecethree: '<img src="/assets/images/port3.jpg">',
@@ -212,7 +214,7 @@ jQuery(function($) {
 
       // Some page data
       this.model.set({
-        content: '<h1>Draw Here</h1>'
+        content: '<h1>Magic Cube</h1>',
       });
 
     },

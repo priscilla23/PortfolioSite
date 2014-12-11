@@ -18,6 +18,7 @@ html
     link(href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400', rel='stylesheet', type='text/css')
   
   body
+    //img(src='/assets/images/logo.png')
     .wrapper
     
       
@@ -53,25 +54,41 @@ html
 
   script#about(type="text/template").
     <div class="page about">
-    {{{content}}}
-    {{{avi}}}
-    {{{info}}}
-    </div>
-    
+     {{{content}}}
+     {{{avi}}}
+     {{{info}}}
+  </div>
   script#portfolio(type="text/template").
     <div class="page portfolio">
     {{{content}}}
-    {{{pieceone}}}
-    {{{piecetwo}}}
-    {{{piecethree}}}
+    {{{pieceone}}}<p>Multimedia Collage</p>
+    {{{piecetwo}}}<p>Typography - Paper Towns by John Green</p>
+    {{{piecethree}}}<p>Solar Panel Infograpic</p>
     </div>
     
   script#fun(type="text/template").
-    <div class="page fun">{{{content}}}
+    <div class="page fun">
+      <div class="wrap">
+        <div class="cube">
+          <b class="front"></b>
+          <b class="back"></b>
+          <b class="top"></b>
+          <b class="bottom"></b>
+          <b class="left"></b>
+          <b class="right"></b>
+          <i class="front"></i>
+          <i class="back"></i>
+          <i class="top"></i>
+          <i class="bottom"></i>
+          <i class="left"></i>
+          <i class="right"></i>
+        </div>
+    </div>
     </div>
 
   script#contact(type="text/template").
     <div class="page contact">{{{content}}}
+  
     </div>
 
   // -----------------------------
@@ -86,11 +103,11 @@ html
 
   script(type="text/javascript", src="//cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0/handlebars.js")
   
-  script(src='/socket.io/socket.io.js')
+  script(src='http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js')
   
-  script(src='http://code.jquery.com/jquery-1.8.0.min.js')
+  script(src='js/jquery.simple3D.js')
   
-  script(src='assets/js/script.js')
+
   // -----------------------------
   // Application
   // -----------------------------
