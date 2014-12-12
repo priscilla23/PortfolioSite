@@ -69,7 +69,13 @@
     
   </script>
   <script id="contact" type="text/template">
-    <div class="page contact">{{{content}}}
+    <div class="page contact">
+    {{{content}}}
+    <form action="welcome_get.php" method="get">
+      Name: <input type="text" name="name"><br>
+      <textarea rows="4" cols="50">Leave a message pretty please!</textarea><br>
+      <input type="submit">
+    </form>
     
     </div>
     
