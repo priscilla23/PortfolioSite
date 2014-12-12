@@ -214,7 +214,7 @@ jQuery(function($) {
 
       // Some page data
       this.model.set({
-        content: '<h1>Magic Cube</h1>',
+        content: '<h1>The Cube</h1>',
       });
 
     },

@@ -3,18 +3,12 @@
 // -----------------------------
 
 //colors
-@yellow: #F4EEB4;
-@mist: #ADC4A0;
-@jade: #55897D;
-@steel: #425454;
-@plummy:#7B564F;
-
 @yellow2: rgba(244,238,180,0.9);
 @mist2: rgba(173,196,160, 0.9);
 @jade2: rgba(85,137,125, 0.9);
 @steel2: rgba(66,84,84, 0.9);
 @plummy2: rgba(123,86,79, 0.9);
-
+@pink: rgba(255,61,127, 0.4);
 
 @white: #FFF;
 @bgColor: #4183D7;
@@ -217,8 +211,10 @@ li.five {
 }
 
 // -----------------------------
-//Magic Cube
+//Creepy Cube
 // -----------------------------
+//This cube literally has no purpose ^.^
+
 /* keyframes for rotating animation */
 @-webkit-keyframes spin {
   from { 
@@ -265,8 +261,8 @@ b{
   width:200px;
   height:200px;
   display:block;
-  background:rgba(255,255,255,0.1);
-  box-shadow:inset 0 0 30px rgba(0,0,0,0.2);
+  background:@pink;
+  box-shadow:inset 0 0 30px @pink;
   font-size:20px;
   text-align:center;
   line-height:200px;
@@ -322,7 +318,8 @@ i{
   width:100px;
   height:100px;
   display:block;
-  background:pink;
+  background: url('../images/eye.jpg');
+  background-size:cover;
   transition: all 1s linear;
   -webkit-transition: all 1s linear;
 }
@@ -344,6 +341,9 @@ i.bottom{
 i.left{
   transform:rotateY(270deg) translateX(-50px);
   transform-origin: center left;
+  
+  -webkit-transform:rotateY(270deg) translateX(-50px);
+  -webkit-transform-origin: center left;
 }
 i.right{
   transform:rotateY(-270deg) translateX(50px);
